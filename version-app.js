@@ -8,11 +8,12 @@ module.exports = {
 }
 
 const appName = 'RCBUS NLW - 2 - WEB'
-const version = '1.0.2'
+const version = '1.0.3'
 
 /*
 HISTORICO
 
+05/08/2020 AS 18:27:59 - 1.0.3 - BRANCH: update_cleiton_20200805_181345
 05/08/2020 AS 18:12:58 - 1.0.2 - BRANCH: update_cleiton_20200805_004826
 05/08/2020 AS 00:39:18 - 1.0.1 - BRANCH: update_cleiton_20200805_003542
 05/08/2020 - 1.0.0
