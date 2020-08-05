@@ -2,6 +2,25 @@
     font-size: 50%;
 
     --color-background: #F0F0F7;
+    --color-primary-lighter: #10a0ff;
+    --color-primary-light: #1583cc;
+    --color-primary: rgb(20,100,150);
+    --color-primary-dark: rgb(0,40,70);
+    --color-primary-darker: rgb(0,20,50);
+    --color-secundary: #04D361;
+    --color-secundary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: rgb(0,40,70);
+    --color-text-complement: #5bbdff;
+    --color-text-base: #1583cc;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+
+    /*--color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
     --color-primary: #8257E5;
@@ -18,7 +37,7 @@
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
     --color-box-base: #FFFFFF;
-    --color-box-footer: #FAFAFC;
+    --color-box-footer: #FAFAFC;*/
 }
 
 *{
