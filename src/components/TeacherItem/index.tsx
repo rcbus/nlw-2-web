@@ -3,33 +3,52 @@ import React from 'react';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css'
+import api from '../../services/api';
 
-const TeacherItem: React.FC = (props) => {
+export interface Teacher {
+    avatar: string;
+    bio: string;
+    cost: number;
+    id: number;
+    name: string;
+    subject: string;
+    whatsapp: string;
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+    function createNewConnection(){
+        api.post('connections',{
+            user_id:teacher.id
+        });
+    }
+
     return(
         <article className="teacher-item">
             <header>
-                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG8D_AEyZS_KA/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=-NIiguTbT3bnmZga7WzbOqHPmUDrWhDqTWxpI-qZHiw" alt="Cleiton Cavalcanti" />
+                <img src={teacher.avatar} alt={teacher.name} />
                 <div>
-                    <strong>Cleiton Cavalcanti</strong>
-                    <span>Arduino</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
 
             <p>
-            Profissional na integração de Arduino com Web e Mobile.
-            <br/><br/>
-            Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma linguagem de programação padrão, a qual tem origem em Wiring, e é essencialmente C/C++.
+            {teacher.bio}
             </p>
 
             <footer>
                 <p>
                     Preço/hora
-                    <strong>R$ 80,00</strong>
+                    <strong>R$ {teacher.cost}</strong>
                 </p>
-                <button type="button">
+                <a href={`https://wa.me/${teacher.whatsapp}`} target="_black" onClick={createNewConnection}>
                     <img src={whatsappIcon} alt="Whatsapp" />
                     Entrar em contato
-                </button>
+                </a>
             </footer>
         </article>
     );
