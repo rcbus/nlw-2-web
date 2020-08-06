@@ -2,6 +2,8 @@
 
 # NLW - 2 - WEB
 
+Acesse [http://ec2-34-200-218-199.compute-1.amazonaws.com:3000/](http://ec2-34-200-218-199.compute-1.amazonaws.com:3000/) e veja o projeto funcionando.
+
 ![](/src/assets/images/frontend.png)
 
 Projeto Proffy da NLW - New Level Week da [Rocketseat](https://nextlevelweek.com/). Sendo esse projeto a parte frontend web. Acesse o projeto backend aqui [NLW-2-SERVER](https://github.com/rcbus/nlw-2-server).
